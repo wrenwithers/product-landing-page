@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
 
 html {
   background: url(../img/barbellrow.jpg) no-repeat center center fixed;
@@ -6,24 +13,26 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
 .nav {
   float: inherit;
   height: 120px;
   width: auto;
   background-color: #393939;
   margin-top: 40px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px;
 }
 
 .nav p {
   float: left;
   display: inline;
-  width: 500px;
-  height: auto;
-  font:40px 'equipslablight', normal;
+  width: 550px;
   padding: auto;
-  margin-left: 10px;
-  border-style: solid;
-  border-color: #000;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  font:40px 'equipslablight', normal;
 }
 
 .nav #inside {
@@ -36,14 +45,10 @@ html {
 #inside li {
   float: right;
   display: inline;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left:15px;
-  padding-right:15px;
-  margin-right: 20px;
-  margin-top: 10px;
-  font-size: 20px;
-  font:16px 'equipslablight', normal;
+  padding: auto;
+  margin-right: 30px;
+  margin-top: 30px;
+  font:20px 'equipslablight', normal;
 }
 
 .header {
@@ -51,35 +56,69 @@ html {
   height: 100px;
   width: 1100px;
   background-color: #393939;
-  margin: 100px auto auto auto;
+  margin: 100px auto 0px auto;
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px;
+}
+
+.header p{
+  text-align: center;
+  font:32px 'equipslablight', normal;
 }
 
 .wrap {
-  height: 800px;
+  height: 1000px;
   width: 1100px;
   margin: 0px auto auto auto;
-  background-color:#444444;
-}
-
-#Column1 {
-  float:left;
-  height: 800px;
-  width: 500px;
-  background-color: #FFFFFF;
+  background-color:#AAAAAA;
 }
 
 #Column2 h3 {
-  display: inline-block;
-  margin-left: 140px;
+  text-align: center;
+  font:24px 'equipslablight', normal;
+  margin-top: 100px;
 }
 
-/*#Column2 .work {
-  /*display: block;*/
-  /*width: 500px;
-  height: auto;
-}*/*/
-
 #Column2 .work p {
-  font-size: 18px;
-  font-family: sans-serif;
+  text-align: center;
+  font:18px 'equipslablight', normal;
+}
+
+#image img {
+  position: relative;
+  float: left;
+  margin: 0 15px 5px 0;
+  border: solid 1px #bbb;
+}
+
+#image p {
+  position: absolute;
+  margin-top: 315px;
+  margin-left: 170px;
+}
+
+.gallery {
+  height: 100px;
+  width: 1100px;
+  background-color: #393939;
+  margin: 210px auto 0px auto;
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px;
+}
+
+.gallery img {
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 7px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px;
+}
+
+
+.clearboth {
+  clear: both;
 }
